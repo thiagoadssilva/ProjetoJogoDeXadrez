@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ProjetoXadrez.tabuleiro;
+
+Tabuleiro tab = new Tabuleiro(8,8);
+Console.ReadLine();
