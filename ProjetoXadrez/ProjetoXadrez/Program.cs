@@ -6,7 +6,11 @@ using ProjetoXadrez.xadrez;
 
 try
 {
-    Tabuleiro tab = new Tabuleiro(8, 8);
+    PosicaoXadrez pos = new PosicaoXadrez('c', 7);
+    Console.WriteLine(pos);
+    Console.WriteLine(pos.ToPosicao());
+
+    /*Tabuleiro tab = new Tabuleiro(8, 8);
 
 
     tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
@@ -15,7 +19,7 @@ try
     tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 10));
 
 
-    Tela.imprimirTabuleiro(tab);
+    Tela.imprimirTabuleiro(tab);*/
 }
 catch (TabuleiroExeception e){
     Console.WriteLine("Erro: " + e.Message);
