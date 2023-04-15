@@ -20,5 +20,9 @@ namespace ProjetoXadrez.tabuleiro
             Colunas = colunas;
             Peca = new Peca[linhas, colunas];
         }
+        // Metodo criado para poder ter acesso a propriedade Peca, pois no memento dessa clase ela está privada
+        public Peca peca(int linha, int coluna) {
+            return Peca[linha, coluna];
+        }
     }
 }

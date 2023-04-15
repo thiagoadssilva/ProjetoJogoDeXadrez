@@ -1,4 +1,6 @@
-﻿using ProjetoXadrez.tabuleiro;
+﻿using ProjetoXadrez;
+using ProjetoXadrez.tabuleiro;
+
 
 Tabuleiro tab = new Tabuleiro(8,8);
-Console.ReadLine();
+Tela.imprimirTabuleiro(tab);
