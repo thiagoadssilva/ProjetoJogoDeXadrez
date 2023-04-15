@@ -10,19 +10,26 @@ namespace ProjetoXadrez.tabuleiro
     {
         public int Linhas { get; set; }
         public int Colunas { get; set; }
-        private Peca[,] Peca;
 
-        public Tabuleiro() { }
+        private Peca[,] Pecas;
+
+        //public Tabuleiro() { }
 
         public Tabuleiro(int linhas, int colunas)
         {
             Linhas = linhas;
             Colunas = colunas;
-            Peca = new Peca[linhas, colunas];
+            Pecas = new Peca[linhas, colunas];
         }
         // Metodo criado para poder ter acesso a propriedade Peca, pois no memento dessa clase ela está privada
         public Peca peca(int linha, int coluna) {
-            return Peca[linha, coluna];
+            return Pecas[linha, coluna];
+        }
+
+        public void ColocarPeca(Peca p, Posicao pos)
+        {
+            Pecas[pos.Linha, pos.Coluna] = p;
+            p.Posicao = pos;
         }
     }
 }
