@@ -23,5 +23,10 @@ namespace ProjetoXadrez.tabuleiro
             QteMovimentos = 0;
             Tab = tab;
         }
+
+        public void IncrementarQteMovimentos()
+        {
+            QteMovimentos++;
+        }
     }
 }
