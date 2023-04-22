@@ -31,12 +31,14 @@ try
             partida.RealizaJogada(origem, destino);
             //Tela.imprimirTabuleiro(partida.tab);
         }
-        catch (TabuleiroExeception e )
+        catch (TabuleiroExeception e)
         {
             Console.WriteLine(e.Message);
             Console.ReadLine();
         }
     }
+    Console.Clear();
+    Tela.ImprimirPartida(partida);
 }
 catch (TabuleiroExeception e)
 {
